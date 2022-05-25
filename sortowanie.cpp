@@ -114,7 +114,7 @@ int main()
     }
     else
     {
-       for (int i = 0; i < 1000; i++)
+       for (int i = 0; i < 500000; i++)
            file >> tab[i];
     }
 
@@ -122,7 +122,7 @@ int main()
 
     start = high_resolution_clock::now();
 
-    Quicksort(tab, 0, 1000);
+    Quicksort(tab, 0, 500000);
 
     stop = high_resolution_clock::now();
     time = duration_cast<milliseconds>(stop - start);
@@ -131,7 +131,7 @@ int main()
 
     start = high_resolution_clock::now();
 
-    Quicksort(tab, 0, 1000);
+    Quicksort(tab, 0, 500000);
 
     stop = high_resolution_clock::now();
     time = duration_cast<milliseconds>(stop - start);
@@ -140,7 +140,7 @@ int main()
     reverse(begin(tab), end(tab));
     start = high_resolution_clock::now();
 
-    Quicksort(tab, 0, 1000);
+    Quicksort(tab, 0, 500000);
 
     stop = high_resolution_clock::now();
     time = duration_cast<milliseconds>(stop - start);
